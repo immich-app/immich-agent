@@ -8,16 +8,20 @@
   },
   "package": {
     "productName": "immich-agent",
-    "version": "0.0.0"
+    "version": "1.0.0"
   },
   "tauri": {
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true
+    },
     "allowlist": {
       "all": true
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
-      "copyright": "",
+      "category": "ImmichToolset",
+      "copyright": "MIT",
       "deb": {
         "depends": []
       },
