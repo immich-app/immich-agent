@@ -16,7 +16,10 @@
       "iconAsTemplate": true
     },
     "allowlist": {
-      "all": true
+      "all": true,
+      "fs": {
+        "scope": ["/"]
+      }
     },
     "bundle": {
       "active": true,
@@ -65,6 +68,36 @@
         "title": "immich-agent",
         "width": 800
       }
-    ]
+    ],
+    "cli": {
+      "description": "Immich CLI",
+      "longDescription": "Immich CLI Toolset",
+      "beforeHelp": "Immich CLI Help",
+      "args": [
+        {
+          "name": "source",
+          "index": 1,
+          "takesValue": true
+        },
+        {
+          "name": "destination",
+          "index": 2,
+          "takesValue": true
+        }
+      ],
+      "subcommands": {
+        "branch": {
+          "description": "Create a new branch",
+          "longDescription": "Create a new branch",
+          "args": [
+            {
+              "name": "name",
+              "index": 1,
+              "takesValue": true
+            }
+          ]
+        }
+      }
+    }
   }
 }
